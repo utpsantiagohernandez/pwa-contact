@@ -56,6 +56,7 @@ self.addEventListener('activate', (evt) => {
 }); */
 
 self.addEventListener('fetch', evt =>{
+  console.log('[ServiceWorker] Fetch', evt.request.url);
   evt.respondWith(
     caches.match(evt.request).then(staticRes =>{
       return staticRes || fetch(evt.request).then(dynamicRes =>{
