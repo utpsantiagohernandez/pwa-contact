@@ -1,0 +1,96 @@
+body{
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+
+.lista-atras{
+   max-width: 100%; 
+   height: 60vh;
+}
+
+
+.boton-flotante{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background-color: #fff;
+}
+
+.boton-flotante-centro{
+    display: block;
+    margin: 1.2rem;
+}
+
+@media (min-width: 768px){
+
+    .lista-atras{
+       
+        max-height: 60vh;
+     }
+}
+
+@media (min-width: 992px){
+    .boton-flotante{
+        position: static;
+        width: 15%;
+        float: right;
+    }
+
+    .boton-flotante-centro{
+        margin: 2rem;
+    }
+
+    .lista-atras{
+        height: 100vh;
+     }
+}
+
+@media (min-width: 1200px){
+    .lista-atras{
+        height: 55vh;
+     }
+}
+
+/*** Inicio de estilos de la para las fotos de los usuarios **/
+  
+  .container-photo {
+    width: 100%;
+    height: 85vw;
+    background-color: #DFE1E6;
+    margin-bottom: 3rem;
+  }
+  
+  
+  
+  .footer {
+    position: fixed;
+    bottom: 0px;
+    top: 60%;
+    right: 0px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .icon {
+    box-shadow: 0 20px 40px 0 rgba(91, 107, 174, 0.15);
+    background-color: #0d6efd;
+    color: #FFFFFF;
+    border-radius: 100%;
+    width: 4rem;
+    height: 4rem;
+    margin-top: 0.3rem;
+  }
+  
+  .icon::before {
+    font-size: 2rem;
+  }
+  
+  .inputget {
+    font-size: 1px;
+    position: absolute;
+    z-index: -1;
+  }
+
